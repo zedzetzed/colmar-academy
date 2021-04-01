@@ -3,6 +3,7 @@
     <head>
         <title>Colmar Academy | Main Page</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
     </head>
 
@@ -14,13 +15,18 @@
                 <h3 class="site-logo-name">COLMAR<span>ACADEMY</span></h3>
             </div>
 
-            <nav>
-                <ul>
-                    <li>On campus</li>
-                    <li>Online</li>
-                    <li>For compaines</li>
-                    <li>Sign in</li>
-                </ul>
+            <nav class="desktop">
+                <a>On campus</a>
+                <a>Online</a>
+                <a>For compaines</a>
+                <a>Sign in</a>
+            </nav>
+
+            <nav class="mobile">
+                <a><img src="./resources/images/ic-logo.svg" alt="company logo"></a>
+                <a><img src="./resources/images/ic-on-campus.svg" alt=""></a>
+                <a><img src="./resources/images/ic-online.svg" alt=""></a>
+                <a><img src="./resources/images/ic-login.svg" alt=""></a>
             </nav>
         </header>
         
@@ -48,7 +54,8 @@
                 <section class="information-articles">
                     <section class="article">
                         <figure>
-                            <img src="./resources/images/information-orientation.jpg" alt="">
+                            <img class="desktop" src="./resources/images/information-orientation.jpg" alt="">
+                            <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="">
                         </figure>
                         <div class="article-description">
                             <h3>Orientation Date</h3>
@@ -58,7 +65,8 @@
                     </section>
                     <section class="article">
                         <figure>
-                            <img src="./resources/images/information-campus.jpg" alt="">
+                            <img class="desktop" src="./resources/images/information-campus.jpg" alt="">
+                            <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="">
                         </figure>
                         <div class="article-description">
                             <h3>Our campus</h3>
@@ -68,7 +76,8 @@
                     </section>
                     <section class="article">
                         <figure>
-                            <img src="./resources/images/information-guest-lecture.jpg" alt="">
+                            <img class="desktop" src="./resources/images/information-guest-lecture.jpg" alt="">
+                            <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="">
                         </figure>
                         <div class="article-description">
                             <h3>Our guest lecture</h3>

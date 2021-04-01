@@ -59,12 +59,14 @@ a {
 .site-logo span {
     font-weight: normal;
 }
-nav ul {
+.mobile {
+    display: none;
+}
+.desktop {
     display: flex;
     flex-direction: row;
-    list-style-type: none;
 }
-nav ul > li {
+.desktop a {
     padding-left: 16px;
     font-size: 20px;
 }
@@ -197,7 +199,8 @@ button {
     display: flex;
     flex-direction: column;
     width: 40%;
-}/*---------- footer ----------*/
+}
+/*---------- footer ----------*/
 footer {
     display: flex;
     align-items: center;
@@ -218,4 +221,68 @@ footer {
 .footer-links ul > li {
     padding-left: 16px;
     font-size: 20px;
+}
+
+/*---------- MEDIA QUERIES ----------*/
+
+@media only screen and (max-device-width: 500px) and (hover: hover){
+    /*---------- header ----------*/
+    .main-header {
+        padding: 0;
+        height: 80px;
+        border-bottom: none;
+    }
+    .desktop,
+    .site-logo {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .mobile a {
+        display: flex;
+    }
+    .mobile a img {
+        height: 40px;
+    }
+    /*---------- CTA section ----------*/
+    .call-to-action {
+        margin-top: 80px;
+        padding: 0 0 40px 0;
+        flex-direction: column;
+    }
+    .cta-image {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    /*---------- information section ----------*/
+    .information {
+        padding: 0 32px;
+    }
+    .information-left {
+        display: none
+    }
+    .information-articles {
+        width: 100%;
+    }
+    .article {
+        flex-direction: column;
+    }
+    .article:hover {
+        background-color: none;
+    }
+    .article-description {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .article figure {
+        width: 100%;
+    }
 }
