@@ -225,7 +225,17 @@ footer {
 
 /*---------- MEDIA QUERIES ----------*/
 
-@media only screen and (max-device-width: 500px) and (hover: hover){
+@media only screen and (max-device-width: 500px) {
+    h1 {
+        font-size: 2.25em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.4em;
+    }
+    
     /*---------- header ----------*/
     .main-header {
         padding: 0;
@@ -284,5 +294,37 @@ footer {
     }
     .article figure {
         width: 100%;
+    }
+    /*---------- start-learning section ----------*/
+    .start-learning {
+        background-color: white;
+        padding: 0;
+    }
+    .start-learning-articles{
+        gap: 0;
+    }
+    .start-learning-article {
+        margin-bottom: 0;
+        width: 90%;
+    }
+    .start-learning-article-description {
+        padding: 0;
+    }
+    .start-learning-article-description h3 {
+        background-color: lightgray;
+        padding: 24px;
+        margin-bottom: 10px;
+    }
+    /*---------- thesis-exhibit section ----------*/
+    .thesis-exhibit {
+        padding: 0;
+        padding-top: 64px;
+    }
+    .video-container {
+        width: 100%;
+        padding-right: 0;
+    }
+    footer {
+        border-top: none;
     }
 }
